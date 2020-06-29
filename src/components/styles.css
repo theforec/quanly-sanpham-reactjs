@@ -1,0 +1,176 @@
+body {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  margin: auto;
+  width: 80%;
+}
+
+#caption {
+  text-align: center;
+  padding: 5px;
+  margin-top: 2%;
+  font-size: 25px;
+}
+#searchBar {
+  flex: 1;
+  display: flex;
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 10px;
+}
+
+#searchBar > button,
+input {
+  padding: 5px;
+  font-size: 20px;
+}
+#searchBar > input {
+  /* width: auto; */
+  flex: 1;
+  margin-left: 10%;
+}
+
+table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#label > th {
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+th,
+td {
+  text-align: left;
+  padding: 1%;
+}
+.donGia {
+  padding: 1%;
+  text-align: right;
+}
+.action {
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+}
+
+#label {
+  background-color: rgb(133, 133, 133);
+}
+
+#inputData {
+  display: flex;
+  flex-direction: column;
+}
+#inputData > input {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+}
+
+#formButton {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+#formButton > button {
+  padding: 10px;
+  flex-basis: 200px;
+  font-size: 20px;
+}
+
+.addModal {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  padding-top: 5%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animateTop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateTop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animateTop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateTop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  text-align: center;
+  background-color: #5cb85c;
+  color: white;
+}
+.close {
+  position: absolute;
+  right: 1%;
+}
+.modal-body {
+  padding: 20px 16px;
+}
